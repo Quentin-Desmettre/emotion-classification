@@ -25,7 +25,7 @@ from app.services.models.lstm.trainer import LstmTrainer
 
 print("Training model...")
 trainer = LstmTrainer(model, train_loader, val_loader, optimizer, True, criterion)
-best_model = trainer.train(epochs=300, verbose=True, doEvaluate=True)
+best_model = trainer.train(epochs=50, verbose=True, doEvaluate=True)
 print("Model trained")
 
 # Save the model

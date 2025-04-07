@@ -8,5 +8,5 @@ def load_models() -> dict[str, Model]:
     return {
         "naive_bayes": naive_bayes.create(),
         "lstm": lstm.create(),
-        "transformer": None
+        "transformer": transformer.create(),
     }

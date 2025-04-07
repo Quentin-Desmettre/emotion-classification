@@ -12,6 +12,9 @@ class ModelVocabulary:
         self.max_len = max_len
         self.vocab_size = len(self.vocab)
 
+    def __len__(self):
+        return self.vocab_size
+
     def preprocess(self, text: str) -> list[str]:
         return self.preprocess_doc(self.nlp(text))
 
